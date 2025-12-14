@@ -1,0 +1,32 @@
+
+const tipoSelect = document.getElementById('tipo');
+
+function toggleCampos() {
+    const tipo = tipoSelect.value;
+    
+    const divTinta = document.getElementById('campos-tinta');
+    const divEpi = document.getElementById('campos-epi');
+    
+    const inputCor = document.getElementById('cor');
+    const inputAcabamento = document.getElementById('acabamento');
+    const inputCa = document.getElementById('ca');
+
+    divTinta.classList.add('d-none');
+    divEpi.classList.add('d-none');
+    
+    inputCor.required = false;
+    inputAcabamento.required = false;
+    inputCa.required = false;
+
+    if (tipo === 'tinta') {
+        divTinta.classList.remove('d-none');
+        inputCor.required = true;
+        inputAcabamento.required = true;
+    } 
+    else if (tipo === 'epi') {
+        divEpi.classList.remove('d-none');
+        inputCa.required = true;
+    }
+}
+
+tipoSelect.addEventListener('change', toggleCampos);

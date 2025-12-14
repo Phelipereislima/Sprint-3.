@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rainha das Tintas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        body {
+            background-color: #212529;
+            overflow-x: hidden; 
+        }
+        .sidebar-link {
+            font-size: 1.1rem;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .sidebar-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff !important;
+        }
+        .number-display {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #0d6efd; 
+        }
+        
+        .full-height {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row full-height">
+
+            <main class="col-md-9 col-lg-10 p-5 d-flex flex-column align-items-center justify-content-center text-center">
+                
+                <div class="mb-5">
+                    <h1 class="display-4 fw-bold text-uppercase text-white">
+                        <i class="bi bi-droplet-fill text-primary me-2"></i>Rainha das Tintas
+                    </h1>
+                    <p class="lead text-secondary">Sistema de Gestão de Estoque</p>
+                </div>
+
+                <div class="card bg-body-tertiary border-0 shadow-lg rounded-4 p-5 mb-5 w-100" style="max-width: 600px;">
+                    <h2 class="h4 text-uppercase text-secondary mb-2">Total de Produtos</h2>
+                    <div class="number-display">1.245</div>
+                    <div class="text-muted small">Itens cadastrados no sistema</div>
+                </div>
+
+                <div class="d-flex gap-3 mb-5">
+                    <button class="btn btn-outline-info btn-lg px-4 rounded-pill">
+                        <i class="bi bi-paint-bucket me-2"></i>Estoque Tintas
+                    </button>
+                    <button class="btn btn-outline-warning btn-lg px-4 rounded-pill">
+                        <i class="bi bi-cone-striped me-2"></i>Estoque EPIs
+                    </button>
+                </div>
+
+                <div>
+                    <a href="cadastro_produto.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow">
+                        <i class="bi bi-plus-lg me-2"></i>Novo Produto
+                    </a>
+                </div>
+
+            </main>
+
+            <aside class="col-md-3 col-lg-2 bg-body-tertiary border-start border-secondary p-4 d-flex flex-column">
+                
+                <div class="text-end mb-4">
+                    <span class="badge bg-primary">Menu</span>
+                </div>
+
+                <nav class="nav flex-column gap-2 flex-grow-1">
+                    <a href="Home.html" class="sidebar-link active d-flex align-items-center justify-content-end">
+                        Home 
+                    </a>
+                    <a href="EstoqueTintas.html" class="nav-link link-light sidebar-link d-flex align-items-center justify-content-end">
+                        Estoque de Tintas <i class="bi bi-box-seam ms-3 fs-5"></i>
+                    </a>
+                    
+                    <a href="#" class="nav-link link-light sidebar-link d-flex align-items-center justify-content-end">
+                        Estoque EPIs <i class="bi bi-shield-check ms-3 fs-5"></i>
+                    </a>
+
+                    <a href="cadastro_usuario.html" class="nav-link link-light sidebar-link d-flex align-items-center justify-content-end">
+                        Usuários <i class="bi bi-people-fill ms-3 fs-5"></i>
+                    </a>
+                </nav>
+
+                <div class="mt-auto pt-4 border-top border-secondary">
+                    <a href="index.html" class="nav-link link-danger sidebar-link d-flex align-items-center justify-content-end">
+                        Sair <i class="bi bi-box-arrow-right ms-3 fs-5"></i>
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
